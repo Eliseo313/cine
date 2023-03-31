@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo cine.productos -->	
+		<record model="ir.ui.view" id="productos_form">
+            <field name="name">cine.productos.form</field>
+            <field name="model">cine.productos</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Datos de productos">
+						<field name="name" placeholder="Nombre del producto" />
+						<field name="precio" placeholder="Precio"/>
+                        <field name="tamanio" placeholder="Tamaño del producto"/>
+                        <field name="sabor" placeholder="Sabor del producto"/>
+                    </group>
+                </sheet>
+            </form>
+            </field>
+		</record>
+
+        <!-- vista tipo tree del modelo cine.productos -->	
+		<record model="ir.ui.view" id="cine_productos_tree">
+			<field name="name">cine.productos.tree</field>
+			<field name="model">cine.productos</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="productos" >
+						<field name="name" />
+                        <field name="precio"/>
+						<field name="tamanio"/>
+                        <field name="sabor"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cine_productos_search">
+			<field name="name">cine.productos.search</field>
+			<field name="model">cine.productos</field>
+			<field name="arch" type="xml">
+				<search>
+                        <field name="name" />
+                        <field name="tamanio"/>
+						<field name="sabor"/>
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO cine.productos -->	
+		<record id="cine_productos_action" model="ir.actions.act_window">
+			<field name="name">Productos</field>
+			<field name="res_model">cine.productos</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+</odoo>

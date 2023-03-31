@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo cine.asientos -->	
+		<record model="ir.ui.view" id="asientos_form">
+            <field name="name">cine.asientos.form</field>
+            <field name="model">cine.asientos</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Datos de asientos">
+                        <field name="sala_id" placeholder="Sala" />
+						<field name="fila" placeholder="Fila del asiento" />
+						<field name="numero" placeholder="Numero de asiento"/>
+                        <field name="disponible" placeholder="Disponibilidad del asiento"/>
+                    </group>
+                </sheet>
+            </form>
+            </field>
+		</record>
+
+        <!-- vista tipo tree del modelo cine.asientos -->	
+		<record model="ir.ui.view" id="cine_asientos_tree">
+			<field name="name">cine.asientos.tree</field>
+			<field name="model">cine.asientos</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="asientos" >
+                        <field name="sala_id" />
+						<field name="fila" />
+                        <field name="numero"/>
+						<field name="disponible"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cine_asientos_search">
+			<field name="name">cine.asientos.search</field>
+			<field name="model">cine.asientos</field>
+			<field name="arch" type="xml">
+				<search>
+                        <field name="sala_id" />
+                        <field name="disponible"/>
+						<field name="fila" />
+                        <field name="numero"/>
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO cine.asientos -->	
+		<record id="cine_asientos_action" model="ir.actions.act_window">
+			<field name="name">Asientos</field>
+			<field name="res_model">cine.asientos</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+</odoo>

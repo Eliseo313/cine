@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- vista tipo tree del modelo cine.salas -->	
+		<record model="ir.ui.view" id="cine_salas_tree">
+			<field name="name">cine.salas.tree</field>
+			<field name="model">cine.salas</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Salas" editable="bottom">
+					<field name="name" />
+					<field name="capacidad" />
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- ACCION PARA EL MODELO cine.salas -->	
+		<record id="cine_salas_action" model="ir.actions.act_window">
+			<field name="name">Salas</field>
+			<field name="res_model">cine.salas</field>
+			<field name="view_mode">tree</field>
+		</record>
+
+</odoo>

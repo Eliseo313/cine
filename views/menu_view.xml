@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<menuitem name="Cine" id="cine_menu" sequence="10" />
+			<menuitem name="Configuración" id="cine_configuracion_menu" sequence="20" parent="cine_menu" />
+				<menuitem name="Salas" action="cine_salas_action"  id="cine_salas_menu" sequence="30" parent="cine_configuracion_menu" />
+				<menuitem name="Peliculas" action="cine_peliculas_action"  id="cine_peliculas_menu" sequence="40" parent="cine_configuracion_menu" />
+				<menuitem name="Empleados" action="cine_empleados_action"  id="cine_empleados_menu" sequence="50" parent="cine_configuracion_menu" />
+				<menuitem name="Productos" action="cine_productos_action"  id="cine_productos_menu" sequence="60" parent="cine_configuracion_menu" />
+				<menuitem name="Asientos" action="cine_asientos_action"  id="cine_asientos_menu" sequence="70" parent="cine_configuracion_menu" />
+				
+	</data>
+</odoo>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo cine.empleados -->	
+		<record model="ir.ui.view" id="empleados_form">
+            <field name="name">cine.empleados.form</field>
+            <field name="model">cine.empleados</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Datos de empleados">
+						<field name="photo" placeholder="Foto" widget="image" options="{'size': [150, 150]}"/>
+                        <field name="name" placeholder="Nombre del empleado" />
+						<field name="puesto" placeholder="Puesto"/>
+                        <field name="turno" placeholder="turno de trabajo"/>
+                    </group>
+                </sheet>
+            </form>
+            </field>
+		</record>
+
+        <!-- vista tipo tree del modelo cine.empleados -->	
+		<record model="ir.ui.view" id="cine_empleados_tree">
+			<field name="name">cine.empleados.tree</field>
+			<field name="model">cine.empleados</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="empleados" >
+						<field name="photo" widget="image" options="{'size': [50, 50]}"/>
+                        <field name="name" />
+                        <field name="turno"/>
+						<field name="puesto"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cine_empleados_search">
+			<field name="name">cine.empleados.search</field>
+			<field name="model">cine.empleados</field>
+			<field name="arch" type="xml">
+				<search>
+                        <field name="name" />
+                        <field name="puesto"/>
+						<field name="turno"/>
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO cine.empleados -->	
+		<record id="cine_empleados_action" model="ir.actions.act_window">
+			<field name="name">Empleados</field>
+			<field name="res_model">cine.empleados</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+</odoo>
