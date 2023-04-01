@@ -11,4 +11,5 @@ class ventas(models.Model):
     cantidad = fields.Integer(string='Cantidad')
     producto_id = fields.Many2one('cine.productos',string='Producto comprado')
 
+
     _order = 'empleado_id,producto_id,fecha,folio,cantidad'
