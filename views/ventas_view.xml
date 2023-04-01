@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo cine.ventas -->	
+		<record model="ir.ui.view" id="ventas_form">
+            <field name="name">cine.ventas.form</field>
+            <field name="model">cine.ventas</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Datos de ventas">
+                        <field name="empleado_id" placeholder="Empleado" />
+						<field name="fecha" placeholder="Fecha" />
+						<field name="folio" placeholder="Folio de venta"/>
+                    </group>
+                </sheet>
+            </form>
+            </field>
+		</record>
+
+        <!-- vista tipo tree del modelo cine.ventas -->	
+		<record model="ir.ui.view" id="cine_ventas_tree">
+			<field name="name">cine.ventas.tree</field>
+			<field name="model">cine.ventas</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="ventas" >
+                        <field name="empleado_id" />
+						<field name="fecha" />
+						<field name="folio" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cine_ventas_search">
+			<field name="name">cine.ventas.search</field>
+			<field name="model">cine.ventas</field>
+			<field name="arch" type="xml">
+				<search>
+                        <field name="empleado_id" />
+						<field name="fecha" />
+						<field name="folio" />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO cine.ventas -->	
+		<record id="cine_ventas_action" model="ir.actions.act_window">
+			<field name="name">Ventas</field>
+			<field name="res_model">cine.ventas</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+</odoo>
