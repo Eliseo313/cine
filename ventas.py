@@ -8,5 +8,7 @@ class ventas(models.Model):
     empleado_id = fields.Many2one('cine.empleados',string='Empleado')
     fecha = fields.Date(string='Fecha')
     folio = fields.Char(string='Folio')
+    cantidad = fields.Integer(string='Cantidad')
+    producto_id = fields.Many2one('cine.productos',string='Producto comprado')
 
-    _order = 'empleado_id,fecha,folio'
+    _order = 'empleado_id,producto_id,fecha,folio,cantidad'

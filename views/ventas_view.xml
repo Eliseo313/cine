@@ -10,8 +10,10 @@
                 <sheet>
                     <group string="Datos de ventas">
                         <field name="empleado_id" placeholder="Empleado" />
+						<field name="producto_id" placeholder="Producto" />
 						<field name="fecha" placeholder="Fecha" />
 						<field name="folio" placeholder="Folio de venta"/>
+						<field name="cantidad" placeholder="Cantidad" />				
                     </group>
                 </sheet>
             </form>
@@ -26,8 +28,10 @@
 			<field name="arch" type="xml">
 				<tree string="ventas" >
                         <field name="empleado_id" />
+						<field name="producto_id" />
 						<field name="fecha" />
 						<field name="folio" />
+						<field name="cantidad" />
 				</tree>
 			</field>
 		</record>
@@ -38,6 +42,7 @@
 			<field name="arch" type="xml">
 				<search>
                         <field name="empleado_id" />
+						<field name="producto_id" />
 						<field name="fecha" />
 						<field name="folio" />
 				</search>
