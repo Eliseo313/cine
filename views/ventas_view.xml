@@ -12,7 +12,7 @@
                         <field name="empleado_id" placeholder="Empleado" />
 						<field name="producto_id" placeholder="Producto" />
 						<field name="fecha" placeholder="Fecha" />
-						<field name="folio" placeholder="Folio de venta"/>
+						<field name="name" placeholder="Folio de venta"/>
 						<field name="cantidad" placeholder="Cantidad" />				
                     </group>
                 </sheet>
@@ -30,7 +30,7 @@
                         <field name="empleado_id" />
 						<field name="producto_id" />
 						<field name="fecha" />
-						<field name="folio" />
+						<field name="name" />
 						<field name="cantidad" />
 				</tree>
 			</field>
@@ -44,7 +44,7 @@
                         <field name="empleado_id" />
 						<field name="producto_id" />
 						<field name="fecha" />
-						<field name="folio" />
+						<field name="name" />
 				</search>
 			</field>
 		</record>
