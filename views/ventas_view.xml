@@ -13,7 +13,8 @@
 						<field name="producto_id" placeholder="Producto" />
 						<field name="fecha" placeholder="Fecha" />
 						<field name="name" placeholder="Folio de venta"/>
-						<field name="cantidad" placeholder="Cantidad" />				
+						<field name="cantidad" placeholder="Cantidad" />
+						<field name="importe" placeholder="Total a pagar" />				
                     </group>
                 </sheet>
             </form>
@@ -32,6 +33,7 @@
 						<field name="fecha" />
 						<field name="name" />
 						<field name="cantidad" />
+						<field name="importe"/>
 				</tree>
 			</field>
 		</record>
