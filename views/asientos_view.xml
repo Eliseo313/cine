@@ -10,6 +10,7 @@
                 <sheet>
                     <group string="Datos de asientos">
                         <field name="sala_id" placeholder="Sala" />
+						<field name="name" placeholder="Asiento" />
 						<field name="fila" placeholder="Fila del asiento" />
 						<field name="numero" placeholder="Numero de asiento"/>
                         <field name="ocupado" placeholder="esta ocupado el asiento?"/>
@@ -27,6 +28,7 @@
 			<field name="arch" type="xml">
 				<tree string="asientos" >
                         <field name="sala_id" />
+						<field name="name" />
 						<field name="fila" />
                         <field name="numero"/>
 						<field name="ocupado"/>
@@ -40,6 +42,7 @@
 			<field name="arch" type="xml">
 				<search>
                         <field name="sala_id" />
+						<field name="name" />
                         <field name="ocupado"/>
 						<field name="fila" />
                         <field name="numero"/>
