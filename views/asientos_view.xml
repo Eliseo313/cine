@@ -12,7 +12,7 @@
                         <field name="sala_id" placeholder="Sala" />
 						<field name="fila" placeholder="Fila del asiento" />
 						<field name="numero" placeholder="Numero de asiento"/>
-                        <field name="disponible" placeholder="Disponibilidad del asiento"/>
+                        <field name="ocupado" placeholder="esta ocupado el asiento?"/>
                     </group>
                 </sheet>
             </form>
@@ -29,7 +29,7 @@
                         <field name="sala_id" />
 						<field name="fila" />
                         <field name="numero"/>
-						<field name="disponible"/>
+						<field name="ocupado"/>
 				</tree>
 			</field>
 		</record>
@@ -40,7 +40,7 @@
 			<field name="arch" type="xml">
 				<search>
                         <field name="sala_id" />
-                        <field name="disponible"/>
+                        <field name="ocupado"/>
 						<field name="fila" />
                         <field name="numero"/>
 				</search>

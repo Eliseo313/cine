@@ -4,8 +4,8 @@
     'version': '1.0',
     'category': 'Comercial',
     'description': 'Control de cine',
-    'author': 'Yo',
-    'maintainer': 'Yo',
+    'author': 'Eliseo Cardenas',
+    'maintainer': 'Eliseo Cardenas',
     'website': 'http://www.itsa.edu.mx',
     'depends': ['base'],
     'data': [
