@@ -15,6 +15,7 @@
         'views/productos_view.xml',
         'views/asientos_view.xml',
         'views/ventas_view.xml',
+        'views/boletos_view.xml',
         'views/menu_view.xml',
         
     ],

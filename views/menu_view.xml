@@ -9,6 +9,7 @@
 				<menuitem name="Productos" action="cine_productos_action"  id="cine_productos_menu" sequence="60" parent="cine_configuracion_menu" />
 				<menuitem name="Asientos" action="cine_asientos_action"  id="cine_asientos_menu" sequence="70" parent="cine_configuracion_menu" />
 				<menuitem name="Ventas" action="cine_ventas_action"  id="cine_ventas_menu" sequence="80" parent="cine_configuracion_menu" />
+				<menuitem name="Boletos" action="cine_boletos_action"  id="cine_boletos_menu" sequence="90" parent="cine_configuracion_menu" />
 				
 	</data>
 </odoo>

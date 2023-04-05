@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo cine.boletos -->	
+		<record model="ir.ui.view" id="boletos_form">
+            <field name="name">cine.boletos.form</field>
+            <field name="model">cine.boletos</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Datos de boletos">
+                        <field name="name" placeholder="Folio de boleto"/>
+                        <field name="pelicula_id" placeholder="Pelicula" />
+						<field name="sala" placeholder="Sala" />
+						<field name="asiento_id" placeholder="Asiento" />
+						<field name="horario" placeholder="Horario" />			
+                    </group>
+                </sheet>
+            </form>
+            </field>
+		</record>
+
+        <!-- vista tipo tree del modelo cine.boletos -->	
+		<record model="ir.ui.view" id="cine_boletos_tree">
+			<field name="name">cine.boletos.tree</field>
+			<field name="model">cine.boletos</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="boletos" >
+                         <field name="name" />
+                        <field name="pelicula_id" />
+						<field name="sala" />
+						<field name="asiento_id"  />
+						<field name="horario"  />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="cine_boletos_search">
+			<field name="name">cine.boletos.search</field>
+			<field name="model">cine.boletos</field>
+			<field name="arch" type="xml">
+				<search>
+                        <field name="name" />
+                        <field name="pelicula_id" />
+						<field name="sala" />
+						<field name="asiento_id"  />
+						<field name="horario"  />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO cine.boletos -->	
+		<record id="cine_boletos_action" model="ir.actions.act_window">
+			<field name="name">Boletos</field>
+			<field name="res_model">cine.boletos</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+</odoo>
